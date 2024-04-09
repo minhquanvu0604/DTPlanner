@@ -55,5 +55,5 @@ Launching the ROS node:
 - [Notes](doc/misc_note.md) on the functionality of the CGAL Delaunay Triangualtion
 
 # Reference 
-- The package is developed according to the path planner from AMZ. See: [AMZ Driverless: The Full Autonomous Racing System](doc/pdf/AMZ%20Driverless%20The%20Full%20Autonomous%20Racing%20System.pdf)
+- The package is developed according to the path planner from AMZ. See: [AMZ Driverless: The Full Autonomous Racing System](doc/pdf)
 - The simplified version of the planner can be explained in the blogpost from MathWorks: [Path Planning for Formula Student Driverless Cars Using Delaunay Triangulation](https://blogs.mathworks.com/student-lounge/2022/10/03/path-planning-for-formula-student-driverless-cars-using-delaunay-triangulation/) 
