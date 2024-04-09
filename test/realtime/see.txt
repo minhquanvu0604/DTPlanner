@@ -1,0 +1,285 @@
+====PRINTING FIRST STEP====
+Step 1 : (5.50819, -2.40575) (9.08781, -2.14327) (12.7402, -0.972994) (5.51732, 2.53135) (9.15896, 2.88393) (12.8074, 3.82699) 
+
+====START PLANNING====
+STEP 1
+
+NO MATCHED -------------------------------
+FIRST NODE: 
+Edge vertices: (5.51732 2.53135), (5.50819 -2.40575)
+Midpoint: 5.51275 0.0627976
+Previous point: 0 0
+Angle diff: 0.0113908
+=====================================
+FIRST EDGE
+Current point: 5.51275 0.0627976
+Current edge: Edge vertices: (5.51732 2.53135), (5.50819 -2.40575)
+-----------------------------------
+Edge vertices: (5.50819 -2.40575), (9.08781 -2.14327)
+Midpoint: 7.298 -2.27451
+Previous point: 5.51275 0.0627976
+Angle diff: 0.929911
+REJECTED
+=====================================
+Edge vertices: (9.08781 -2.14327), (5.51732 2.53135)
+Midpoint: 7.30256 0.194036
+Previous point: 5.51275 0.0627976
+Angle diff: 0.0618035
+PASSED
+=====================================
+Current point: 7.30256 0.194036
+Current edge: Edge vertices: (5.51732 2.53135), (9.08781 -2.14327)
+-----------------------------------
+Edge vertices: (9.08781 -2.14327), (9.15896 2.88393)
+Midpoint: 9.12338 0.370329
+Previous point: 7.30256 0.194036
+Angle diff: 0.0233255
+PASSED
+=====================================
+Edge vertices: (9.15896 2.88393), (5.51732 2.53135)
+Midpoint: 7.33814 2.70764
+Previous point: 7.30256 0.194036
+Angle diff: 1.48345
+REJECTED
+=====================================
+Current point: 9.12338 0.370329
+Current edge: Edge vertices: (9.15896 2.88393), (9.08781 -2.14327)
+-----------------------------------
+Edge vertices: (9.08781 -2.14327), (12.7402 -0.972994)
+Midpoint: 10.914 -1.55813
+Previous point: 9.12338 0.370329
+Angle diff: 0.918969
+REJECTED
+=====================================
+Edge vertices: (12.7402 -0.972994), (9.15896 2.88393)
+Midpoint: 10.9496 0.95547
+Previous point: 9.12338 0.370329
+Angle diff: 0.213562
+PASSED
+=====================================
+Current point: 10.9496 0.95547
+Current edge: Edge vertices: (9.15896 2.88393), (12.7402 -0.972994)
+-----------------------------------
+Edge vertices: (12.7402 -0.972994), (12.8074 3.82699)
+Midpoint: 12.7738 1.427
+Previous point: 10.9496 0.95547
+Angle diff: 0.0571394
+PASSED
+=====================================
+Edge vertices: (12.8074 3.82699), (9.15896 2.88393)
+Midpoint: 10.9832 3.35546
+Previous point: 10.9496 0.95547
+Angle diff: 1.2467
+REJECTED
+=====================================
+Current point: 12.7738 1.427
+Current edge: Edge vertices: (12.8074 3.82699), (12.7402 -0.972994)
+-----------------------------------
+END PATH
+FINISHED GENERATING PATHS
+Passed: 4
+Total number of nodes checked: 9
+Number of paths: 1
+Path: (5.51275, 0.0627976) (7.30256, 0.194036) (9.12338, 0.370329) (10.9496, 0.95547) (12.7738, 1.427) 
+exit plan()
+STEP 2
+
+NO MATCHED -------------------------------
+FIRST NODE: 
+Edge vertices: (5.42106 2.49643), (5.38008 -2.44051)
+Midpoint: 5.40057 0.0279595
+Previous point: 0 0
+Angle diff: 0.0051771
+=====================================
+FIRST EDGE
+Current point: 5.40057 0.0279595
+Current edge: Edge vertices: (5.42106 2.49643), (5.38008 -2.44051)
+-----------------------------------
+Edge vertices: (5.38008 -2.44051), (5.50819 -2.40575)
+Midpoint: 5.44413 -2.42313
+Previous point: 5.40057 0.0279595
+Angle diff: 1.5582
+REJECTED
+=====================================
+Edge vertices: (5.50819 -2.40575), (5.42106 2.49643)
+Midpoint: 5.46462 0.0453381
+Previous point: 5.40057 0.0279595
+Angle diff: 0.259762
+PASSED
+=====================================
+Current point: 5.46462 0.0453381
+Current edge: Edge vertices: (5.42106 2.49643), (5.50819 -2.40575)
+-----------------------------------
+Edge vertices: (5.50819 -2.40575), (5.51732 2.53135)
+Midpoint: 5.51275 0.0627976
+Previous point: 5.46462 0.0453381
+Angle diff: 0.083065
+PASSED
+=====================================
+Edge vertices: (5.51732 2.53135), (5.42106 2.49643)
+Midpoint: 5.46919 2.51389
+Previous point: 5.46462 0.0453381
+Angle diff: 1.30401
+REJECTED
+=====================================
+Current point: 5.51275 0.0627976
+Current edge: Edge vertices: (5.51732 2.53135), (5.50819 -2.40575)
+-----------------------------------
+Edge vertices: (5.50819 -2.40575), (9.08781 -2.14327)
+Midpoint: 7.298 -2.27451
+Previous point: 5.51275 0.0627976
+Angle diff: 1.26652
+REJECTED
+=====================================
+Edge vertices: (9.08781 -2.14327), (5.51732 2.53135)
+Midpoint: 7.30256 0.194036
+Previous point: 5.51275 0.0627976
+Angle diff: 0.27481
+PASSED
+=====================================
+Current point: 7.30256 0.194036
+Current edge: Edge vertices: (5.51732 2.53135), (9.08781 -2.14327)
+-----------------------------------
+Edge vertices: (9.08781 -2.14327), (9.0649 2.82552)
+Midpoint: 9.07635 0.34112
+Previous point: 7.30256 0.194036
+Angle diff: 0.00953701
+PASSED
+=====================================
+Edge vertices: (9.0649 2.82552), (5.51732 2.53135)
+Midpoint: 7.29111 2.67843
+Previous point: 7.30256 0.194036
+Angle diff: 1.50221
+REJECTED
+=====================================
+Current point: 9.07635 0.34112
+Current edge: Edge vertices: (9.0649 2.82552), (9.08781 -2.14327)
+-----------------------------------
+Edge vertices: (9.08781 -2.14327), (12.6212 -1.05443)
+Midpoint: 10.8545 -1.59885
+Previous point: 9.07635 0.34112
+Angle diff: 0.911631
+REJECTED
+=====================================
+Edge vertices: (12.6212 -1.05443), (9.0649 2.82552)
+Midpoint: 10.843 0.885541
+Previous point: 9.07635 0.34112
+Angle diff: 0.216196
+PASSED
+=====================================
+Current point: 10.843 0.885541
+Current edge: Edge vertices: (9.0649 2.82552), (12.6212 -1.05443)
+-----------------------------------
+Edge vertices: (12.6212 -1.05443), (9.15896 2.88393)
+Midpoint: 10.8901 0.91475
+Previous point: 10.843 0.885541
+Angle diff: 0.256854
+PASSED
+=====================================
+Edge vertices: (9.15896 2.88393), (9.0649 2.82552)
+Midpoint: 9.11193 2.85472
+Previous point: 10.843 0.885541
+Angle diff: 1.99301
+REJECTED
+=====================================
+Current point: 10.8901 0.91475
+Current edge: Edge vertices: (9.15896 2.88393), (12.6212 -1.05443)
+-----------------------------------
+Edge vertices: (12.6212 -1.05443), (12.7402 -0.972994)
+Midpoint: 12.6807 -1.01371
+Previous point: 10.8901 0.91475
+Angle diff: 1.37823
+REJECTED
+=====================================
+Edge vertices: (12.7402 -0.972994), (9.15896 2.88393)
+Midpoint: 10.9496 0.95547
+Previous point: 10.8901 0.91475
+Angle diff: 0.0443266
+PASSED
+=====================================
+Current point: 10.9496 0.95547
+Current edge: Edge vertices: (9.15896 2.88393), (12.7402 -0.972994)
+-----------------------------------
+Edge vertices: (12.7402 -0.972994), (12.7194 3.74501)
+Midpoint: 12.7298 1.38601
+Previous point: 10.9496 0.95547
+Angle diff: 0.362818
+PASSED
+=====================================
+Edge vertices: (12.7194 3.74501), (9.15896 2.88393)
+Midpoint: 10.9392 3.31447
+Previous point: 10.9496 0.95547
+Angle diff: 0.975092
+REJECTED
+=====================================
+Current point: 12.7298 1.38601
+Current edge: Edge vertices: (12.7194 3.74501), (12.7402 -0.972994)
+-----------------------------------
+Edge vertices: (12.7402 -0.972994), (12.8074 3.82699)
+Midpoint: 12.7738 1.427
+Previous point: 12.7298 1.38601
+Angle diff: 0.512386
+PASSED
+=====================================
+Edge vertices: (12.8074 3.82699), (12.7194 3.74501)
+Midpoint: 12.7634 3.786
+Previous point: 12.7298 1.38601
+Angle diff: 1.31949
+REJECTED
+=====================================
+Current point: 12.7738 1.427
+Current edge: Edge vertices: (12.8074 3.82699), (12.7402 -0.972994)
+-----------------------------------
+END PATH
+FINISHED GENERATING PATHS
+Passed: 9
+Total number of nodes checked: 19
+Number of paths: 1
+Path: (5.40057, 0.0279595) (5.46462, 0.0453381) (5.51275, 0.0627976) (7.30256, 0.194036) (9.07635, 0.34112) (10.843, 0.885541) (10.8901, 0.91475) (10.9496, 0.95547) (12.7298, 1.38601) (12.7738, 1.427) 
+exit plan()
+STEP 3
+
+NO MATCHED -------------------------------
+FIRST NODE: 
+Edge vertices: (5.32537 -2.25391), (5.19204 2.6814)
+Midpoint: 5.25871 0.213744
+Previous point: 0 0
+Angle diff: 0.0406234
+=====================================
+FIRST EDGE
+Current point: 5.25871 0.213744
+Current edge: Edge vertices: (5.19204 2.6814), (5.32537 -2.25391)
+-----------------------------------
+Edge vertices: (5.32537 -2.25391), (5.42106 2.49643)
+Midpoint: 5.37322 0.12126
+Previous point: 5.25871 0.213744
+Angle diff: 0.720009
+PASSED
+=====================================
+Edge vertices: (5.42106 2.49643), (5.19204 2.6814)
+Midpoint: 5.30655 2.58891
+Previous point: 5.25871 0.213744
+Angle diff: 1.51003
+REJECTED
+=====================================
+Current point: 5.37322 0.12126
+Current edge: Edge vertices: (5.42106 2.49643), (5.32537 -2.25391)
+-----------------------------------
+Edge vertices: (5.32537 -2.25391), (5.51732 2.53135)
+Midpoint: 5.42135 0.138719
+Previous point: 5.37322 0.12126
+Angle diff: 1.02739
+REJECTED
+=====================================
+Edge vertices: (5.51732 2.53135), (5.42106 2.49643)
+Midpoint: 5.46919 2.51389
+Previous point: 5.37322 0.12126
+Angle diff: 2.21009
+REJECTED
+=====================================
+FINISHED GENERATING PATHS
+Passed: 1
+Total number of nodes checked: 4
+Number of paths: 0
+unknown file: Failure
+C++ exception with description "_paths is empty" thrown in the test body.

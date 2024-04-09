@@ -1,0 +1,18 @@
+### NOTHING, FIXED ###
+
+points:
+  - {x: 1.88646, y: 1.58633, color: 0}
+  - {x: 4.12648, y: -2.61752, color: 1}
+  - {x: 5.24349, y: 1.95156, color: 0}
+  - {x: 7.00584, y: -2.66569, color: 1}
+  - {x: 8.82064, y: 2.01137, color: 0}
+  - {x: 10.2425, y: -2.55626, color: 1}
+  - {x: 12.8858, y: 2.04778, color: 0}
+  - {x: 14.4598, y: -2.49613, color: 1}
+
+car_pose:
+  position:
+    x: 0.0
+    y: 0.0
+  orientation:
+    yaw: 0.0

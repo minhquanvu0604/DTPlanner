@@ -1,0 +1,21 @@
+# [ INFO] [1702138174.808827933]: DTriangPlannerColorLightROSWrapper Constructor
+# [WARNING] Outlying cones detected
+# Cones both groups::::::::::::::::::::::::::: 
+# Cone - X: 2.06624, Y: 0.58733, Color: 0
+# Cone - X: 5.84573, Y: -6.6108, Color: 0
+# Cones group 1::::::::::::::::::::::::::: 
+# Cone - X: 2.06624, Y: 0.58733, Color: 0
+# Print points: 
+# 2.06624 0.58733
+# Print offset: 0
+# Segmentation fault (core dumped)
+
+points:
+  - { x: 2.06624, y: 0.58733, color: 1 }
+
+car_pose:
+  position:
+    x: 0
+    y: 0
+  orientation:
+    yaw: 0

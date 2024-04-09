@@ -1,0 +1,22 @@
+
+                // Check if it's between blue-yellow
+                bool reject = false;
+                int color_both = 0;
+                for (DTCL::Cone& cone_group_2 : _group_2){
+                    // Should be 1 to be both colors
+                    if (is_approx_equal(cone_group_2.point,two_pts.first,1e-3)){
+                        color_both += cone_group_2.color;
+                        std::cout << "FIRST CONESSS: " << cone_group_2.point <<
+                        "color : " << cone_group_2.color << std::endl;
+                    }
+                    if (is_approx_equal(cone_group_2.point,two_pts.second,1e-3)){
+                        color_both += cone_group_2.color;
+                        std::cout << "SECOND CONESSS: " << cone_group_2.point <<
+                        "color : " << cone_group_2.color << std::endl;                    }
+                }
+                if (color_both != 1){
+                    std::cout << "REJECTED NOT BOTH COLOR" << std::endl;
+                    std::cout << "=====================================" << std::endl;
+                    continue;
+
+                }

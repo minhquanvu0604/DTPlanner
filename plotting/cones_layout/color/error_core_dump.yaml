@@ -1,0 +1,43 @@
+# [ INFO] [1702043315.691247221, 1068.040000000]: Received a cone ground truth message
+# Cones both groups::::::::::::::::::::::::::: 
+# Cone - X: 1.31577, Y: -1.30206, Color: 1
+# Cone - X: 3.59319, Y: -2.77921, Color: 1
+# Cone - X: 4.71148, Y: -5.57842, Color: 1
+# Cone - X: 4.78485, Y: 2.45246, Color: 0
+# Cone - X: 6.74835, Y: 1.10439, Color: 0
+# Cone - X: 8.28451, Y: -1.42994, Color: 0
+# Cone - X: 9.03142, Y: -4.9018, Color: 0
+# Cone - X: 9.03602, Y: -10.5104, Color: 0
+# Cone - X: 9.11594, Y: -8.09932, Color: 0
+# Cones group 1::::::::::::::::::::::::::: 
+# Cone - X: 1.31577, Y: -1.30206, Color: 1
+# Cone - X: 3.59319, Y: -2.77921, Color: 1
+# Cone - X: 4.71148, Y: -5.57842, Color: 1
+# Path from group 1: 3 element(s)
+# Point (0 0)  Point (2.09319 -1.27921)  Point (3.21148 -4.07842)  
+# Cones group 2::::::::::::::::::::::::::: 
+# Cone - X: 4.78485, Y: 2.45246, Color: 0
+# Cone - X: 6.74835, Y: 1.10439, Color: 0
+# Cone - X: 8.28451, Y: -1.42994, Color: 0
+# Cone - X: 9.03142, Y: -4.9018, Color: 0
+# Cone - X: 9.03602, Y: -10.5104, Color: 0
+# Cone - X: 9.11594, Y: -8.09932, Color: 0
+# Segmentation fault (core dumped)
+
+points:
+  - {x: 1.31577, y: -1.30206, color: 1}
+  - {x: 3.59319, y: -2.77921, color: 1}
+  - {x: 4.71148, y: -5.57842, color: 1}
+  - {x: 4.78485, y: 2.45246, color: 0}
+  - {x: 6.74835, y: 1.10439, color: 0}
+  - {x: 8.28451, y: -1.42994, color: 0}
+  - {x: 9.03142, y: -4.9018, color: 0}
+  - {x: 9.03602, y: -10.5104, color: 0}
+  - {x: 9.11594, y: -8.09932, color: 0}
+
+car_pose:
+  position:
+    x: 0.0
+    y: 0.0
+  orientation:
+    yaw: 0.0

@@ -1,0 +1,41 @@
+# [ INFO] [1701998681.657396305, 487.708000000]: Received a cone ground truth message
+# Cones both groups::::::::::::::::::::::::::: 
+# Cone - X: 2.10441, Y: 1.66875, Color: 0
+# Cone - X: 4.83936, Y: 0.705594, Color: 0
+# Cone - X: 6.99541, Y: -2.12338, Color: 0
+# Cone - X: 8.46431, Y: -4.05545, Color: 0
+# Cone - X: 9.41566, Y: -6.49979, Color: 0
+# Cone - X: 10.3039, Y: -8.94004, Color: 0
+# Cones group 1::::::::::::::::::::::::::: 
+# Cone - X: 2.10441, Y: 1.66875, Color: 0
+# Cone - X: 4.83936, Y: 0.705594, Color: 0
+# Cone - X: 6.99541, Y: -2.12338, Color: 0
+# Cone - X: 8.46431, Y: -4.05545, Color: 0
+# Cone - X: 9.41566, Y: -6.49979, Color: 0
+# Cone - X: 10.3039, Y: -8.94004, Color: 0
+# Path from group 1: 7 element(s)
+# Point (0 0)  Point (0.604407 0.168748)  Point (3.33936 -0.794406)  Point (5.49541 -3.62338)  Point (6.96431 -5.55545)  Point (7.91566 -7.99979)  Point (8.80393 -10.44)  
+# group_1.size(): 6
+# Cones group 2::::::::::::::::::::::::::: 
+# path_group_2 is empty
+# Cone - X: 2.10441, Y: 1.66875, Color: 0
+# Cone - X: 4.83936, Y: 0.705594, Color: 0
+# Cone - X: 6.99541, Y: -2.12338, Color: 0
+# Cone - X: 8.46431, Y: -4.05545, Color: 0
+# Cone - X: 9.41566, Y: -6.49979, Color: 0
+# Cone - X: 10.3039, Y: -8.94004, Color: 0
+
+points:
+  - {x: 2.10441, y: 1.66875, color: 0}
+  - {x: 4.83936, y: 0.705594, color: 0}
+  - {x: 6.99541, y: -2.12338, color: 0}
+  - {x: 8.46431, y: -4.05545, color: 0}
+  - {x: 9.41566, y: -6.49979, color: 0}
+  - {x: 10.3039, y: -8.94004, color: 0}
+
+car_pose:
+  position:
+    x: 0.0
+    y: 0.0
+  orientation:
+    yaw: 0.0

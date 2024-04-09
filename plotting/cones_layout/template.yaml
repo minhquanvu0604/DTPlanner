@@ -1,0 +1,19 @@
+points:
+  # right
+  - { x: , y: , color: }
+  - { x: , y:  }
+  - { x: , y:  }
+
+  #left
+  - { x: , y:  }
+  - { x: , y:  }
+  - { x: , y:  }
+
+car_pose:
+  position:
+    x: 
+    y: 
+  orientation:
+    yaw: 
+
+  

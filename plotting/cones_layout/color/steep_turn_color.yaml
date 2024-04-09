@@ -1,0 +1,55 @@
+### FIXED BY MODIFY get_first_edge TO RETURN AN EDGE WITH 2 CONES OF DIFFERENT COLOR
+
+#Cones both groups::::::::::::::::::::::::::: 
+# Cone - X: 2.83401, Y: -0.175982, Color: 1
+# Cone - X: 4.89114, Y: 0.0122075, Color: 1
+# Cone - X: 5.9127, Y: 4.73311, Color: 0
+# Cone - X: 7.16582, Y: -1.46917, Color: 1
+# Cone - X: 8.27891, Y: -4.27044, Color: 1
+# Cone - X: 8.32905, Y: -9.14535, Color: 1
+# Cone - X: 8.36719, Y: 3.76028, Color: 0
+# Cone - X: 8.38583, Y: -7.02505, Color: 1
+# Cone - X: 10.3282, Y: 2.40857, Color: 0
+# Cone - X: 11.8596, Y: -0.12861, Color: 0
+# Cone - X: 12.6001, Y: -3.60184, Color: 0
+# Cone - X: 12.6787, Y: -6.79952, Color: 0
+
+# Cones group 1::::::::::::::::::::::::::: 
+# Cone - X: 2.83401, Y: -0.175982, Color: 1
+# Cone - X: 4.89114, Y: 0.0122075, Color: 1
+# Path from group 1: 3 element(s)
+# Point (0 0)  Point (1.33401 1.32402)  Point (3.39114 1.51221)  
+# group_1.size(): 2
+
+# Cones group 2::::::::::::::::::::::::::: 
+# Cone - X: 5.9127, Y: 4.73311, Color: 0
+# Cone - X: 7.16582, Y: -1.46917, Color: 1
+# Cone - X: 8.27891, Y: -4.27044, Color: 1
+# Cone - X: 8.32905, Y: -9.14535, Color: 1
+# Cone - X: 8.36719, Y: 3.76028, Color: 0
+# Cone - X: 8.38583, Y: -7.02505, Color: 1
+# Cone - X: 10.3282, Y: 2.40857, Color: 0
+# Cone - X: 11.8596, Y: -0.12861, Color: 0
+# Cone - X: 12.6001, Y: -3.60184, Color: 0
+# Cone - X: 12.6787, Y: -6.79952, Color: 0
+
+points:
+  - {x: 2.83401, y: -0.175982, color: 1}
+  - {x: 4.89114, y: 0.0122075, color: 1}
+  - {x: 5.9127, y: 4.73311, color: 0}
+  - {x: 7.16582, y: -1.46917, color: 1}
+  - {x: 8.27891, y: -4.27044, color: 1}
+  - {x: 8.32905, y: -9.14535, color: 1}
+  - {x: 8.36719, y: 3.76028, color: 0}
+  - {x: 8.38583, y: -7.02505, color: 1}
+  - {x: 10.3282, y: 2.40857, color: 0}
+  - {x: 11.8596, y: -0.12861, color: 0}
+  - {x: 12.6001, y: -3.60184, color: 0}
+  - {x: 12.6787, y: -6.79952, color: 0}
+
+car_pose:
+  position:
+    x: 0.0
+    y: 0.0
+  orientation:
+    yaw: 0.0
