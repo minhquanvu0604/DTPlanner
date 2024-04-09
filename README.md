@@ -1,40 +1,59 @@
-[User Manual](https://doc.cgal.org/latest/Triangulation_2/index.html#Section_2D_Triangulations_Flexibility)
+# Delaunay Triangulation-Based Path Planner
+This repository contains the implementation of a path planner based on Delaunay Triangulation, designed for the specific autonomous navigation task in the F-SAE competition. 
 
-2.1 The Set of Faces
+The planner is divided into three main components:
 
-The single unbounded face of this partition is the complementary of the convex hull. [...]
-Therefore, a fictitious vertex, called the **infinite vertex** is added to the triangulation as well as **infinite edges\*** and infinite faces incident to it.
+- Static Geometry Planner
+- Temporal Planner
+- ROS node for real-time planning
 
-2.2 A Representation Based on Faces and Vertices
+The path planner leverages the computational efficiency and robustness of Delaunay Triangulation for generating the center-line path of the track dictated by cones.
 
-3 Software Design
+<p align="center">
+  <img height="250" alt="gif" src="doc/image/GIF.gif">
+</p>
 
-4 Basic Triangulations
+# Architecture 
+## Inheritance hierarchy
+`Static Geometry Planner` <--- `Temporal Planner` <--- `Real-time ROS Wrapper`
 
-4.1 Description
-The class Triangulation_2<Traits,Tds> serves as a base class for the other 2D triangulations classes and implements the user interface to a triangulation.
+## Design intention for testing
+<details><summary><b>Presentation Slides</b></summary>
+<p align="center">
+  <img width="450" alt="static_lib" src="doc/image/static_lib.png">
+  <img width="450" alt="ros_wrapper" src="doc/image/ros_wrapper.png">
+</p>
+</details>
 
-The vertices and faces of the triangulations are accessed through handles, iterators and circulators. A handle is a model of the concept Handle which basically offers the two dereference operators * and ->. A circulator is a type devoted to visit circular sequences. Handles are used whenever the accessed element is not part of a sequence. Iterators and circulators are used to visit all or parts of the triangulation.
+## Different Versions of the Planner
+Currently there are two versions. Guide to explore the codebase: tracing back from the two ROS Wrappers.
+- `DTRealTimeROSWrapper` ---> `DTRealTime` ---> `DTriangPlanner`
+- `DTriangPlannerColorLightROSWrapper` ---> `DTriangPlannerColorLight`
 
-The iterators and circulators are all bidirectional and non mutable. The circulators and iterators are convertible to the handles with the same value type, so that when calling a member function, any handle type argument can be replaced by an iterator or a circulator with the same value type.
+# Unit Testing and Plotting
+The package provides testing utility such as unit tests and the plotting module. 
+- The unit testing module covers the Static Geometry Planner and Temporal Planner.
+- Plotting (Qt5) helps for visual assessment of the generated paths.
 
+<p align="center">
+  <img height="250" alt="dt_test" src="doc/image/dtplanner_test_cases.png">
+</p>
 
+# Usage 
+Launching the ROS node:
+`roslaunch d_triang utsma_path_planner`
 
+# Dependencies
+- `ROS Noetic` For real-time planning and integration with robotic systems.
+- `CGAL` Computational Geometry Algorithms Library, used for Delaunay Triangulation and geometric computations.
+- `YAML-CPP` For configuration and parameter management. 
+- `Qt5 (Widgets)` Required for graphical user interface applications, if any within the project.
+- `GMP` (GNU Multiple Precision Arithmetic Library) and `MPFR` (Multiple Precision Floating-Point Reliable Library): For high-precision arithmetic operations, often utilized in tandem with CGAL for precise geometric computations.
+- `GTest` (Google Test): Google's C++ test framework, used for unit testing of the project components.
 
-[USAGE GUIDE]
+# Notes
+- [Notes](doc/misc_note.md) on the functionality of the CGAL Delaunay Triangualtion
 
-In CGAL's Delaunay Triangulation data structure, and in many computational geometry libraries, the primary focus is on efficient computation of the triangulation and queries related to it, such as nearest neighbor searches or point location queries. The storage mechanism is optimized for these operations rather than direct retrieval of an edge given its vertices.
-
-This design choice is guided by the typical use cases of such libraries, where direct edge retrieval by vertices is less common than other operations. Additionally, the internal representation of triangulations often involves complex data structures like half-edge data structures, which are optimized for operations like traversing and modifying the triangulation rather than direct access to a specific edge.
-
-In short, while it's technically possible to provide a direct edge retrieval function, it's not a common requirement in the design and use of these libraries, and doing so might not align with the primary optimization goals of the data structure.
-
-
-
-Traversing the adjacency in CGAL's Delaunay Triangulation effectively often involves using circulators and iterators provided by CGAL. These tools are designed to navigate through the vertices, edges, and faces of the triangulation. Here are some common ways to traverse the triangulation
-
-
-NOTE - EDGE:
----nearest_edge.first: This is a Face_handle pointing to one of the faces (triangle) adjacent to the edge. 
----nearest_edge.second: This is an integer (0, 1, or 2) that specifies which edge of the triangle (nearest_edge.first) we are referring to. It helps to identify the exact edge within the triangle.
-This is due to the fact that the triangulation is built upon topological relations, not just geometric ones.
+# Reference 
+- The package is developed according to the path planner from AMZ. See: [AMZ Driverless: The Full Autonomous Racing System](doc/pdf/AMZ%20Driverless%20The%20Full%20Autonomous%20Racing%20System.pdf)
+- The simplified version of the planner can be explained in the blogpost from MathWorks: [Path Planning for Formula Student Driverless Cars Using Delaunay Triangulation](https://blogs.mathworks.com/student-lounge/2022/10/03/path-planning-for-formula-student-driverless-cars-using-delaunay-triangulation/) 
