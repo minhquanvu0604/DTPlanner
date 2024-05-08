@@ -10,7 +10,7 @@ The planner is divided into three main components:
 The path planner leverages the computational efficiency and robustness of Delaunay Triangulation for generating the center-line path of the track dictated by cones.
 
 <p align="center">
-  <img height="350" alt="gif" src="doc/image/GIF.gif">
+  <img width="50%" alt="gif" src="doc/image/GIF.gif">
 </p>
 
 # Architecture 
