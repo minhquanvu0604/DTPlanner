@@ -3,22 +3,29 @@ This repository contains the implementation of a path planner based on Delaunay 
 
 The planner is divided into three main components:
 
-- Static Geometry Planner
-- Temporal Planner
-- ROS node for real-time planning
+- `Static Geometry Planner`
+- `Temporal Planner`
+- `ROS node for real-time planning`
 
 The path planner leverages the computational efficiency and robustness of Delaunay Triangulation for generating the center-line path of the track dictated by cones.
 
 <p align="center">
-  <img height="250" alt="gif" src="doc/image/GIF.gif">
+  <img width="50%" alt="gif" src="doc/image/GIF.gif">
 </p>
 
 # Architecture 
-### Inheritance hierarchy
+## Package Structure
+- `include`: header files
+- `src`: implementation files
+- `test`: unit tests
+- `plotting`: plot the path from a set of cones, visualising the planner in a single frame
+- `testing-code`: scrath directory
+
+## Inheritance hierarchy
 `Static Geometry Planner` <--- `Temporal Planner` <--- `Real-time ROS Wrapper`
 
-### Design intention for testing
-<details><summary><b>Presentation Slides</b></summary>
+## Design intention for testing
+<details><summary><b>Onboarding Presentation Slides</b></summary>
 <p align="center">
   <img width="450" alt="static_lib" src="doc/image/static_lib.png">
   <img width="450" alt="ros_wrapper" src="doc/image/ros_wrapper.png">
