@@ -1,17 +1,21 @@
 #include "d_triang_color_light_ros.hpp"
 
-DTriangPlannerColorLightROSWrapper::DTriangPlannerColorLightROSWrapper(const rclcpp::Node::SharedPtr& node)
-    : _node(node), _path_planning_rate(PATH_PLANNING_RATE), _visualise(true) {
 
-    _sub_cone_array = _node->create_subscription<eufs_msgs::msg::ConeArrayWithCovariance>(
-        "/ground_truth/cones", 1000, std::bind(&DTriangPlannerColorLightROSWrapper::cone_array_callback, this, std::placeholders::_1));
+DTriangPlannerColorLightROSWrapper::DTriangPlannerColorLightROSWrapper(ros::NodeHandle nh)
+    : _path_planning_rate(PATH_PLANNING_RATE), _visualise{true}
+{
+
+    _nh = nh;
+
+    _sub_cone_array = _nh.subscribe("/ground_truth/cones", 1000, &DTriangPlannerColorLightROSWrapper::cone_array_callback,this);
     
-    _pub_command_vel = _node->create_publisher<ackermann_msgs::msg::AckermannDriveStamped>("/cmd_vel_out", 3);
-    _pub_marker = _node->create_publisher<visualization_msgs::msg::MarkerArray>("visualization_marker", 3);
-    _pub_steering_angle = _node->create_publisher<std_msgs::msg::UInt8MultiArray>("/steer_angle", 1);
+    _pub_command_vel = _nh.advertise<ackermann_msgs::AckermannDriveStamped>("/cmd_vel_out",3,false);
+    _pub_marker = _nh.advertise<visualization_msgs::MarkerArray>("visualization_marker",3,false);
+    _pub_steering_angle = _nh.advertise<std_msgs::UInt8MultiArray>("/steer_angle", 1);
 
     execution_loop();
 };
+
 
 void DTriangPlannerColorLightROSWrapper::cone_array_callback(const eufs_msgs::ConeArrayWithCovariance::ConstPtr& msg){
     
@@ -33,6 +37,7 @@ void DTriangPlannerColorLightROSWrapper::cone_array_callback(const eufs_msgs::Co
     }
     _incoming_cones = cones_in;
 }
+
 
 void DTriangPlannerColorLightROSWrapper::execution_loop(){
 

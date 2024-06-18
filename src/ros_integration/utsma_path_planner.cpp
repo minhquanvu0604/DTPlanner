@@ -1,14 +1,22 @@
 #include "d_triang_color_light_ros.hpp"
-
+#include <rclcpp/rclcpp.hpp>
 
 int main(int argc, char **argv)
 {
-    ros::init(argc, argv, "utsma_path_planner");
+    // Initialize ROS 2
+    rclcpp::init(argc, argv);
 
-    ros::NodeHandle nh;
+    // Create a ROS 2 node
+    auto node = std::make_shared<rclcpp::Node>("utsma_path_planner");
 
-    std::shared_ptr<DTriangPlannerColorLightROSWrapper> utsma_path_planner = std::make_shared<DTriangPlannerColorLightROSWrapper>(nh);
+    // Create an instance of the ROS wrapper class, passing the node handle
+    auto utsma_path_planner = std::make_shared<DTriangPlannerColorLightROSWrapper>(node);
 
-  return 0;
+    // Spin the node
+    rclcpp::spin(node);
+
+    // Shutdown ROS 2
+    rclcpp::shutdown();
+
+    return 0;
 }
-

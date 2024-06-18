@@ -1,3 +1,6 @@
+# Porting to ROS 2
+Check out this [page](doc\ros2_migrate.md)
+
 # Delaunay Triangulation-Based Path Planner
 This repository contains the implementation of a path planner based on Delaunay Triangulation, designed for the specific autonomous navigation task in the F-SAE competition. 
 
