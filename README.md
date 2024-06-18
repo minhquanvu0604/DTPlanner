@@ -14,10 +14,10 @@ The path planner leverages the computational efficiency and robustness of Delaun
 </p>
 
 # Architecture 
-## Inheritance hierarchy
+### Inheritance hierarchy
 `Static Geometry Planner` <--- `Temporal Planner` <--- `Real-time ROS Wrapper`
 
-## Design intention for testing
+### Design intention for testing
 <details><summary><b>Presentation Slides</b></summary>
 <p align="center">
   <img width="450" alt="static_lib" src="doc/image/static_lib.png">
@@ -25,7 +25,7 @@ The path planner leverages the computational efficiency and robustness of Delaun
 </p>
 </details>
 
-## Different Versions of the Planner
+### Different Versions of the Planner
 Currently there are two versions. Guide to explore the codebase: tracing back from the two ROS Wrappers.
 - `DTRealTimeROSWrapper` ---> `DTRealTime` ---> `DTriangPlanner`
 - `DTriangPlannerColorLightROSWrapper` ---> `DTriangPlannerColorLight`
