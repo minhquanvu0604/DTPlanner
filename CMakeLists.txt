@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(d_triang)
+project(dt_planner)
 
 ## Use C++11
 if(NOT CMAKE_CXX_STANDARD)
